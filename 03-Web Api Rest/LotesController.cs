@@ -9,7 +9,7 @@ namespace DammWebApi.Controllers
         [HttpPost("evaluar-merma")]
         public IActionResult EvaluarMerma([FromBody] LoteInput input)
         {
-            decimal estado;
+            string estado;
             if (input.PorcentajeMermas >2m)
                 estado = "Lote bajo REVISIÓN";
             else
