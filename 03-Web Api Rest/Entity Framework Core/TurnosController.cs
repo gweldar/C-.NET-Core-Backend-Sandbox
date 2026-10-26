@@ -17,6 +17,15 @@ namespace DammWebApi.Controllers
             _context = context;
         }
 
+        [HttpGet]
+        public async Task<IActionResult> ObtenerTurnos()
+        {
+            // Consultamos la tabla Turnos de forma asíncrona usando EF Core
+            var turnos = await _context.Turnos.ToListAsync();
+    
+            return Ok(turnos);
+        }
+
         [HttpPost("liquidar")]
         public async Task<IActionResult> LiquidarTurno([FromBody] TurnoInput input)
         {
