@@ -12,5 +12,7 @@ namespace DammWebApi.Data
 
         // Esta propiedad se convertirá en la tabla "Turnos" en la Base de Datos
         public DbSet<Turno> Turnos { get; set; }
+        public DbSet<Tanque> Tanques { get; set; }
+        public DbSet<Lote> Lotes { get; set; }
     }
 }
