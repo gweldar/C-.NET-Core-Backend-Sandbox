@@ -11,5 +11,6 @@ namespace EjerciciosApi.Data
         // Aqui agregaremos los DbSets (tablas) mas adelante
         public DbSet<OrdenMantenimiento> OrdenesMantenimiento { get; set; }
         public DbSet<ControlCalidad> ControlesCalidad { get; set; }
+        public DbSet<LoteProduccion> LotesProduccion { get; set; }
     }
 }
